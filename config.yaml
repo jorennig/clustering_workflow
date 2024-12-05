@@ -1,0 +1,23 @@
+input_files: 
+    baseline: 'data_baseline.csv'
+    longitudinal: 'data_longitudinal.csv'
+    change_from_baseline: 'data_longitudinal_change_from_baseline.csv'
+    slopes: 'data_longitudinal_slopes_normalized.csv'
+
+analyses:
+    - baseline
+    - longitudinal
+    - change_from_baseline
+    - slopes
+
+n_neurons: 
+    - '36'
+    - '25'
+
+n_clust: [2, 3, 4]
+
+cluster_x:
+    baseline: True
+    longitudinal: False
+    change_from_baseline: False
+    slopes: True
